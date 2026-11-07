@@ -1,0 +1,123 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0px;
+}
+.header {
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#logo {
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px; 
+    
+}
+
+nav{
+    float: right;
+    padding-top: 20px;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.menu a {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-decoration: none;
+}
+.header .ok{
+    position: sticky;
+    top: 0;
+    background-color: #CDDFEF;
+}
+
+.menu a:hover {
+    color: black; 
+    text-decoration: underline; 
+}
+
+main {
+  width: min(100% - 40px, 1050px);
+  margin: 32px auto;
+  padding: 0;
+}
+
+.intro {
+  max-width: 800px;
+  margin-bottom: 28px;
+}
+
+main h2 {
+  color: #176b87;
+}
+
+.job {
+  margin: 20px 0;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #dce7f0;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgb(30 65 95 / 8%);
+}
+
+.job h3 {
+  margin-top: 0;
+  color: #145f82;
+}
+
+.job h4 {
+  margin-bottom: 6px;
+}
+
+.job ul {
+  padding-left: 22px;
+}
+
+.job a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  color: #fff;
+  background: #1675a8;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.job a:hover {
+  background: #105b83;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 18px;
+  color: #fff;
+  background: #214768;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header .ok {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header .ok nav {
+    flex-wrap: wrap;
+  }
+
+  .header .ok nav .menu a {
+    padding: 8px 12px;
+  }
+}

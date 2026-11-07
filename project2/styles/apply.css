@@ -1,0 +1,217 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0px;
+}
+.header {
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#logo {
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px; 
+    
+}
+
+nav{
+    float: right;
+    padding-top: 20px;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.menu a {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-decoration: none;
+}
+.header .ok{
+    position: sticky;
+    top: 0;
+    background-color: #CDDFEF;
+}
+
+.menu a:hover {
+    color: black; 
+    text-decoration: underline; 
+}
+#diff {
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.site-heading {
+    padding: 28px 16px 20px;
+    text-align: center;
+}
+
+.site-heading h1 {
+    margin: 0;
+    color: #348962;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.site-heading h1 span {
+    color: #331fd0;
+}
+
+.site-heading h2 {
+    margin: 8px 0 0;
+    color: #19324a;
+    font-size: 1.15rem;
+}
+
+.application-page,
+.confirmation-page {
+    width: min(100%, 720px);
+    margin: 12px auto 0;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #dce7f0;
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgb(25 50 74 / 10%);
+}
+
+.application-page h1,
+.confirmation-page h1 {
+    margin: 0 0 24px;
+    color: #173d63;
+    font-size: clamp(1.7rem, 5vw, 2.25rem);
+}
+
+form br {
+    display: none;
+}
+
+form > label {
+    display: block;
+    margin: 18px 0 7px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #aebfce;
+    border-radius: 6px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgb(45 126 186 / 22%);
+    border-color: #287db8;
+}
+
+fieldset {
+    margin: 22px 0 0;
+    padding: 14px 16px;
+    border: 1px solid #c5d3df;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 6px;
+    font-weight: 700;
+}
+
+fieldset label {
+    margin-right: 14px;
+}
+
+fieldset input {
+    accent-color: #176da8;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.form-actions > input[type="submit"],
+.form-actions > input[type="reset"],
+.confirmation-page a {
+    display: inline-block;
+    margin: 0;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 6px;
+    background: #176da8;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-actions > input[type="reset"] {
+    background: #e8eef3;
+    color: #19324a;
+}
+
+.form-actions > input[type="submit"]:hover,
+.confirmation-page a:hover {
+    background: #105783;
+}
+
+.form-actions > input[type="reset"]:hover {
+    background: #d7e2eb;
+}
+
+.confirmation-page p {
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 18px;
+    color: #fff;
+    background: #214768;
+    text-align: center;
+}
+
+@media (max-width: 520px) {
+    .application-page,
+    .confirmation-page {
+        width: calc(100% - 20px);
+    }
+
+    .application-page,
+    .confirmation-page {
+        padding: 22px 18px;
+    }
+
+    fieldset label {
+        display: inline-block;
+        margin: 6px 10px 6px 0;
+    }
+}

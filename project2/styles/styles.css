@@ -1,0 +1,190 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #243247;
+  background: #f4f8fc;
+  line-height: 1.6;
+}
+
+.header {
+  background-image: url("images/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+nav {
+  float: right;
+  padding-top: 20px;
+}
+
+.menu {
+  display: inline-block;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  text-decoration: none;
+}
+
+.header .ok {
+  position: sticky;
+  top: 0;
+  background-color: #CDDFEF;
+}
+
+.menu a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  width: min(100% - 40px, 1050px);
+  margin: 32px auto;
+  padding: 0;
+}
+
+.intro {
+  max-width: 800px;
+  margin-bottom: 28px;
+}
+
+main h2 {
+  color: #176b87;
+}
+
+/* Jobs table */
+.job-table-wrap {
+  margin: 20px 0 36px;
+  overflow-x: auto;
+}
+
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  text-align: left;
+}
+
+.job-table caption {
+  padding: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.job-table th,
+.job-table td {
+  padding: 12px 14px;
+  border: 1px solid #b8c9e7;
+}
+
+.job-table thead {
+  background: #eef4ff;
+}
+
+.job-table tbody tr:nth-child(even) {
+  background: #f8faff;
+}
+
+.job-table tfoot {
+  background: #f1f8f6;
+  font-weight: bold;
+}
+
+/* Job details */
+.job {
+  margin: 20px 0;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #dce7f0;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgb(30 65 95 / 8%);
+}
+
+.job h3 {
+  margin-top: 0;
+  color: #145f82;
+}
+
+.job h4 {
+  margin-bottom: 6px;
+}
+
+.job ul {
+  padding-left: 22px;
+}
+
+.job a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  color: #fff;
+  background: #1675a8;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.job a:hover {
+  background: #105b83;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 18px;
+  color: #fff;
+  background: #214768;
+  text-align: center;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .header .ok {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header .ok nav {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+
+  .header .ok nav .menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header .ok nav .menu a {
+    padding: 8px 12px;
+  }
+
+  .job {
+    padding: 18px;
+  }
+}
+#logo {
+  margin: 10px;
+  border-radius: 0;
+  mix-blend-mode: multiply;
+}
