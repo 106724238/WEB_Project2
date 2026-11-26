@@ -1,0 +1,144 @@
+
+/* ===== About Page (Nguyet Linh) ===== */
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0px;
+}
+.header {
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#logo {
+    margin-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px; 
+    
+}
+
+nav{
+    float: right;
+    padding-top: 20px;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.menu a {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-decoration: none;
+}
+.header .ok{
+    position: sticky;
+    top: 0;
+    background-color: #CDDFEF;
+}
+
+.menu a:hover {
+    color: black; 
+    text-decoration: underline; 
+}
+
+/* ===== Logo and Headings ===== */
+
+h1, h2 {
+    color: #348962;
+}
+
+.slogan {
+    font-style: italic;
+    font-size: 20px;
+    color: #1f6fa8;
+}
+
+/* ===== Main Content ===== */
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* ===== Definition List: Member Contributions ===== */
+
+dl {
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 18px;
+    color: #331fd0;
+    margin-top: 20px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+/* ===== Student ID Badge ===== */
+
+.student-id {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 10px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Courier New", monospace;
+    color: #1c1285;
+    background-color: #e3e0fb;
+    border: 1px solid #331fd0;
+    border-radius: 30px;
+}
+
+/* ===== Fun Facts Table ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px;
+    background-color: white;
+}
+
+caption {
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+}
+
+th, td {
+    border: 1px solid #c533ad;
+    padding: 10px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #2626ca;
+    color: white;
+}
+
+tbody th {
+    background-color: #ecebfa;
+}
+
+/* ===== Footer ===== */
+
+footer {
+    background-color: #331fd0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
