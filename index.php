@@ -1,30 +1,8 @@
-<!-- AI used to generate logo of this page -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EdTech - Home</title>
-    <link rel="stylesheet" href="styles/home.css">
-</head>
-
-<body id="trang">
-    <div class="header">
-        <div class="ok">
-            <img id="logo" src="images/logo.jpg" alt="EdTech logo" width="65">
-            <nav>
-                <div class="menu"><a href="index.php"><strong>MENU</strong></a></div>
-                <div class="menu"><a href="jobs.php"><strong>JOBS</strong></a></div>
-                <div class="menu"><a href="apply.php"><strong>APPLY</strong></a></div>
-                <div class="menu"><a href="about.php"><strong>ABOUT</strong></a></div>
-            </nav>
+<?php include("header.inc");?>
         </div>
-
-        <h1><span style="color: #007bff;">Ed</span><span style="color: #000000; font-weight: bold;">Tech</span></h1>
-        <h2>Making education accessible to everyone.</h2>
-        
+            <h1><span style="color: #007bff;">Ed</span><span style="color: #000000; font-weight: bold;">Tech</span></h1>
+            <h2>Making education accessible to everyone.</h2>
     </div>
-
 
     <div id="diff">
 
@@ -124,7 +102,7 @@
 
                 <tr>
                     <td colspan="2">View all available positions</td>
-                    <td><a href="jobs.php">See Jobs</a></td>
+                    <td><a href="jobs.html">See Jobs</a></td>
                 </tr>
             </table>
         </section>
@@ -132,7 +110,7 @@
 
         <div class="jobs">
             <h1 class="blue">Search for a Job</h1>
-            <form action="jobs." method="get">
+            <form action="jobs.php" method="get">
                 <label for="search">Job title or job code:</label>
                 <input type="text" id="search" name="search" class="search-input">
                 <input type="submit" value="Search">
@@ -140,15 +118,4 @@
         </div>
         <br>
 
-        <footer>
-            <p>
-                <a href="https://atlassian.com">Jira Project</a> 
-                <a href="https://github.com">GitHub Repository</a> 
-                <a href="mailto:info@edtech.com">Email EdTech</a>
-                <p class="copyright">&copy; 2026  EdTech</p>
-            </p>
-        </footer>
-
-    </div>
-</body>
-</html>
+<?php include("footer.inc");?>

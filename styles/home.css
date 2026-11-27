@@ -1,4 +1,3 @@
-
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -110,4 +109,12 @@ table, th, td {
 
 footer{
     border-top: 3px double black;
+    padding: 50px;
+}
+form {
+    padding: 50px;
+    
+}
+.manage {
+    padding: 50px;
 }
